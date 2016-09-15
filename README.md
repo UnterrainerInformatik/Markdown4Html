@@ -7,7 +7,7 @@ The code in this repo helps setting this method up correctly.
 
 ## Setup
 ### - Open the template for HTML-editing in blogger (or open the source of your web-page) you want this method to work on.
-### - Search your end-body tag and copy the 4 script imports in there (just like in the example.html in the root of this repo).
+### - Search your end-body tag and copy the 4 script imports in there (just like in the example.html in the root of this repo; use that file to copy-paste the whole code & example md-script-tags).
 ```html
 <!-- Imports right above your end-body tag. -->
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'
