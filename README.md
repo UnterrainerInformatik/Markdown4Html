@@ -32,5 +32,16 @@ The code in this repo helps setting this method up correctly.
 ```
 
 ## Additional Info
+This version is enhanced.  
+You cannot import .md files from another site with the original code.  
+In order to achieve that, I'm just reading the 'src' attribute of the appropriate 'script' tag and then I do an ajax-request for the source file before rendering it.  
+
 When importing .md files from github, you have to change the URL to point to rawgit.com instead of raw.github.com because github changed their policy about media-types originating from that URL. On rawgit you'll get the right one automatically.
 Don't worry. The rawgit site works automatically as a CDN for your github repos. You don't have to do anything on your own.
+
+## Caveats
+There are limitations to this method of importing and rendering markdown.  
+To be on the safe side, I'm quoting the original post on that matter, just in case you're too lazy to read the original blog-post ;)
+
+> You simply cannot have script tags as parts of preformatted code snippets. Markdown does not convert raw-looking HTML tags into HTML-escaped versions. Yet, when you pre-HTML-escape the contents of Markdown tempalte, it ends up being escaped again by Markdown and literally displays the escaped string, not underlying character.
+> The other problem is: Putting Markdown into script tag makes it unidexable by the search engine.
