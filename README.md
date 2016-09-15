@@ -10,10 +10,14 @@ The code in this repo helps setting this method up correctly.
 ### - Search your end-body tag and copy the 4 script imports in there (just like in the example.html in the root of this repo).
 ```html
 <!-- Imports right above your end-body tag. -->
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' type='text/javascript'/>
-<script src='https://rawgit.com/UnterrainerInformatik/Markdown4Html/master/libs/markdown.min.js' type='text/javascript'/>
-<script src='https://rawgit.com/UnterrainerInformatik/Markdown4Html/master/libs/script.js' type='text/javascript'/>
-<script defer='defer' src='https://rawgit.com/UnterrainerInformatik/Markdown4Html/master/libs/prettify.js' type='text/javascript'/>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'
+  type='text/javascript'/>
+<script src='https://rawgit.com/UnterrainerInformatik/Markdown4Html/master/libs/markdown.min.js'
+  type='text/javascript'/>
+<script src='https://rawgit.com/UnterrainerInformatik/Markdown4Html/master/libs/script.js'
+  type='text/javascript'/>
+<script src='https://rawgit.com/UnterrainerInformatik/Markdown4Html/master/libs/prettify.js'
+  type='text/javascript' defer='defer'/>
 ```
 ### - Insert a script-tag with type="text/x-markdown" where you want your markdown to be displayed.
 
@@ -28,7 +32,8 @@ The code in this repo helps setting this method up correctly.
 #### Or importing a .md file:
 ```html
 <!-- Add markdown importing from github: -->  
-  <script src="https://rawgit.com/UnterrainerInformatik/Markdown4Html/master/testImportFile.md" type="text/x-markdown"></script>
+  <script src="https://rawgit.com/UnterrainerInformatik/Markdown4Html/master/testImportFile.md"
+    type="text/x-markdown"></script>
 ```
 
 ## Additional Info
